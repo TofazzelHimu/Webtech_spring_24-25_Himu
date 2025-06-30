@@ -1,12 +1,11 @@
 <?php include 'header.php'; ?>
 
-<h2>Main Dashboard</h2>
-<p>Select a section to begin working on your assigned features:</p>
+<p>
+  Welcome <span style="color:#2a4d9b; font-weight:bold;"><?php echo htmlspecialchars($_SESSION['user_name']); ?></span>!
+  You're now in the <span style="color:#d35400; font-style:italic;"><?php echo $_SESSION['user_type']; ?></span> zone of the Job Portal.
+  Feel free to dive in using the navigation bar above — everything you need is just a click away!
+</p>
 
-<ul>
-    <li><a href="job_alerts.php">Manage Job Alerts</a></li>
-    <li><a href="interviews.php">Schedule/View Interviews</a></li>
-    <li><a href="employer.php">Access Employer Dashboard</a></li>
-</ul>
+
 
 <?php include 'footer.php'; ?>
